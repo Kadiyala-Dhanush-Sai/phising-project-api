@@ -90,4 +90,4 @@ def health():
     return jsonify({'status': 'Phishing API running'})
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False) 
