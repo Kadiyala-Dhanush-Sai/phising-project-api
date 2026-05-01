@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Phishing Detector",
+    "version": "1.0",
+    "description": "Detects phishing URLs in real time using ML",
+    "permissions": [
+        "webNavigation",
+        "tabs",
+        "storage",
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {},
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "warning.html"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
